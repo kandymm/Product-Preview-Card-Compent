@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+body{
+  font-size:14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh-0.1px);
+  margin: 0 1.5rem;
+}
+
+
+
+h2{
+  color: hsl(158, 36%, 37%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h1{
+  color: hsl(212, 21%, 14%);
+}
+
+p{
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,
+ .price{
+  font-family: "Fraunces", sans-serif;
+}
+
+button, li{
+  font-family: inherit;
+}
+
+.price{
+  color: hsl(158, 36%, 37%);
+}
+
+.container article:first-child img{
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.container article:last-child{
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  margin-top: -1rem;
+  
+}
+
+.container p{
+  margin-bottom: 2rem;
+}
+
+.container ul{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container ul li:first-child{
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.container ul li:nth-child(2) {
+color:hsl(228, 12%, 48%);
+}
+
+.container{
+  max-width: 1200px;
+  
+}
+
+ul{
+  list-style: none;
+}
+
+.container h1{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.container .btn{
+  background-color: hsl(158, 36%, 37%);
+  color:#fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+ transition: 0.3s;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container .btn img{
+  margin-right: 0.5rem;
+}
+
+.container .btn:hover{
+  background-color: hsl(158, 28%, 31%) ;
+}
+
+@media(min-width:640px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.container article:first-child img {
+  border-radius: 0;
+}
+
+.container article:last-child{
+  border-radius: 0;
+}
+}
